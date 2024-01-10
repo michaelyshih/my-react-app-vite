@@ -1,8 +1,10 @@
 
 version: '3.8'
 services:
-  mybun:
+  bun-vite-demo:
     image: bun-vite-demo
+    volumes:
+      - ./:/home/bun/app
     ports:
       - 8000:8000
     env_file:
